@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 1rem;
+}
+h1 { text-align: center; }
+#timeline {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+.event-card {
+  border: 2px solid #000;
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.event-card::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  top: 1rem;
+  left: -5px;
+  transform: rotate(45deg);
+}
+.event-card img {
+  display: block;
+  max-width: 100%;
+  margin-top: 0.5rem;
+}
