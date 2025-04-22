@@ -1,0 +1,33 @@
+[
+  {
+    "date": "1978-12-01",
+    "title": "First Protests Begin",
+    "description": "Marjane witnesses the early demonstrations in Tehran.",
+    "media": "images/protest.jpg"
+  },
+  {
+    "date": "1979-02-11",
+    "title": "Islamic Republic Established",
+    "description": "The Shah is overthrown; the Islamic Republic is born.",
+    "media": "images/republic.jpg"
+  },
+  {
+    "date": "1980-09-22",
+    "title": "Iran–Iraq War Starts",
+    "description": "War breaks out; Marjane’s life is forever changed.",
+    "media": "images/war.jpg"
+  },
+  {
+    "date": "1983-01-01",
+    "title": "Punk Culture Emerges",
+    "description": "Underground punk scenes spring up in Tehran.",
+    "media": "images/punk.jpg"
+  },
+  {
+    "date": "1984-07-01",
+    "title": "Marjane Sent to Austria",
+    "description": "Marjane leaves Iran for schooling in Vienna.",
+    "media": "images/austria.jpg"
+  }
+]
+
