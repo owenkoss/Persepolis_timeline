@@ -1,16 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   fetch('data.json')
-    .then(res => {
-      if (!res.ok) throw new Error('Failed to load data.json');
-      return res.json();
-    })
-    .then(data => {
-      // Render the book summary
-      const summaryEl = document.getElementById('summary');
-      summaryEl.textContent = data.summary;
-
-      // Set up the timeline
+    .then(res => res.json())
+    .then(events => {
       const container = document.getElementById('timeline');
+
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -20,23 +13,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }, { threshold: 0.1 });
 
-      data.events
+      events
         .sort((a, b) => new Date(a.date) - new Date(b.date))
         .forEach(e => {
           const card = document.createElement('div');
           card.className = 'event-card';
           card.innerHTML = `
-            <h2>${e.date}</h2>
-            <h3>${e.title}</h3>
-            <p>${e.description}</p>
+            <h2>${e.date}: ${e.title}</h2>
             ${e.media ? `<img src="${e.media}" alt="${e.title}">` : ''}
+            <p class="teaser"><strong>Click for details…</strong></p>
+            <div class="details">
+              <p>${e.description}</p>
+            </div>
           `;
+
           container.appendChild(card);
           observer.observe(card);
+
+          card.addEventListener('click', () => {
+            card.classList.toggle('expanded');
+          });
         });
     })
-    .catch(err => console.error(err));
+    .catch(err => console.error('Error loading data.json:', err));
 });
+
 
 
 
