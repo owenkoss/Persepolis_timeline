@@ -1,51 +1,52 @@
 [
   {
     "date": "1978-12-01",
-    "title": "First Street Protests",
-    "description": "Marjane, at age 9, watches crowds clash with police in Tehran’s streets—her first brush with revolution.",
+    "title": "Street Protests Start",
+    "description": "Marjane, now age 9, watches crowds brawl with police in the streets of Tehran, now face to face with the revolution",
     "media": "images/protests.jpg"
   },
   {
     "date": "1979-02-11",
     "title": "Islamic Republic Established",
-    "description": "The Shah falls; Ayatollah Khomeini returns. Iran transforms overnight—freedom for some, strict new rules for others.",
+    "description": "The Shah falls; Ayatollah Khomeini returns. Iran begins to transform, but will freedom remain",
     "media": "images/khomeini.jpg"
   },
   {
     "date": "1980-09-22",
-    "title": "Iran–Iraq War Begins",
-    "description": "Bombs rain on Tehran; Marjane’s city goes from protest to siege—blackouts, air-raid drills, loss.",
+    "title": "Iran–Iraq War Starts",
+    "description": "Bombs rain on Tehran and Marjane’s city goes from protest to siege with tragic losses and destruction sure to follow",
     "media": "images/war.jpg"
   },
   {
     "date": "1981-01-07",
     "title": "Veil Enforcement",
-    "description": "Girls must now wear the veil in school—Marjane bristles at forced piety, sparking her first feminist spark.",
+    "description": "Girls must now wear the veil in school, Marjane begins to resist this, showing a feminist spark",
     "media": "images/veil.jpg"
   },
   {
     "date": "1983-01-01",
-    "title": "Punk & Rebellion in Tehran",
-    "description": "Underground punk bands pour into basements—Marjane finds new ways to rebel musically.",
+    "title": "Punk & Rebellion",
+    "description": "Underground punk bands like The Coup begin, and thus Marjane finds new ways to rebel musically.",
     "media": "images/punk.jpg"
   },
   {
     "date": "1984-07-01",
     "title": "Sent to Austria",
-    "description": "To keep her safe, Marjane’s parents ship her off to Vienna—culture shock and loneliness ahead.",
+    "description": "To keep her safe, Marjane’s parents ship her off to Vienna, uprooting her life once again",
     "media": "images/austria.jpg"
   },
   {
     "date": "1987-09-01",
-    "title": "Exile & Identity Crisis",
-    "description": "Alone in Europe, Marjane struggles with identity—does she belong to two worlds or none?",
+    "title": "Exile",
+    "description": "Alone in Europe, Marjane struggles with identity as she wonders where she truly belongs... if anywhere",
     "media": "images/exile.jpg"
   },
   {
     "date": "1994-01-01",
-    "title": "Return & Reflection",
-    "description": "Back in Iran as an adult, Marjane confronts her past—how do you reconcile who you were with who you’ve become?",
+    "title": "Return",
+    "description": "Back in Iran as an adult, Marjane confronts her roots as she wonders how she has become the woman that she is.",
     "media": "images/return.jpg"
   }
 ]
+
 
