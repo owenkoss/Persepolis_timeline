@@ -1,9 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   fetch('data.json')
     .then(res => res.json())
-    .then(events => {
-      const container = document.getElementById('timeline');
+    .then(data => {
+      // 1) Show the book summary
+      const summaryEl = document.getElementById('summary');
+      summaryEl.innerHTML = `<p>${data.summary}</p>`;
 
+      // 2) Prepare the timeline
+      const container = document.getElementById('timeline');
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -13,7 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }, { threshold: 0.1 });
 
-      events
+      // 3) Render each event
+      data.events
         .sort((a, b) => new Date(a.date) - new Date(b.date))
         .forEach(e => {
           const card = document.createElement('div');
@@ -23,11 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>${e.description}</p>
             ${e.media ? `<img src="${e.media}" alt="${e.title}">` : ''}
           `;
-
           container.appendChild(card);
-          observer.observe(card);   
+          observer.observe(card);
         });
     })
     .catch(err => console.error('Error loading data.json:', err));
 });
+
 
