@@ -2,11 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('data.json')
     .then(res => res.json())
     .then(data => {
-      // 1) Show the book summary
+
       const summaryEl = document.getElementById('summary');
       summaryEl.innerHTML = `<p>${data.summary}</p>`;
 
-      // 2) Prepare the timeline
       const container = document.getElementById('timeline');
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }, { threshold: 0.1 });
 
-      // 3) Render each event
       data.events
         .sort((a, b) => new Date(a.date) - new Date(b.date))
         .forEach(e => {
